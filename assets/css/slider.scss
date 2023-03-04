@@ -6,11 +6,14 @@ $card__modal-max-width: 500px;
 $card__modal-height: 90vh;
 $card__modal-header-height: 300px;
 
-html, body {
+html,
+body {
   font-family: 'Poppins', sans-serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -69,12 +72,13 @@ html, body {
   position: relative;
   z-index: 1;
   height: 350px;
-  box-shadow: 0 30px 50px -25px rgba(0,0,0,0.25);
-  > * {
+  box-shadow: 0 30px 50px -25px rgba(0, 0, 0, 0.25);
+
+  >* {
     transition: opacity 350ms;
   }
-  
-  &--opened > *{
+
+  &--opened>* {
     opacity: 0;
   }
 }
@@ -89,20 +93,20 @@ html, body {
   background: $background-color;
   z-index: -1;
   text-align: left;
-  
+
   img {
     @extend .center-image;
     @extend .blend-image;
   }
-  
+
   &::after {
-    content:'';
+    content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(to top, #fff 0, rgba(255,255,255,0) 70%);
+    background: linear-gradient(to top, #fff 0, rgba(255, 255, 255, 0) 70%);
   }
 }
 
@@ -125,7 +129,8 @@ html, body {
   color: #6f7070;
 }
 
-.modal-wrapper, .overlay {
+.modal-wrapper,
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -139,7 +144,7 @@ html, body {
 }
 
 .overlay {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   transition: opacity 150ms ease;
 }
 
@@ -196,31 +201,37 @@ html, body {
   .modal-wrapper {
     pointer-events: none;
   }
-  
+
   .overlay {
     pointer-events: none;
   }
+
   .modal {
     opacity: 0;
   }
+
   .overlay {
     opacity: 0;
   }
 }
 
-[data-modal-state="opening"],[data-modal-state="closing"]{
-  .modal__header, .modal__content, .modal__close-button {
+[data-modal-state="opening"],
+[data-modal-state="closing"] {
+
+  .modal__header,
+  .modal__content,
+  .modal__close-button {
     opacity: 0;
   }
 }
 
-[data-modal-state="opening"]{
+[data-modal-state="opening"] {
   .overlay {
     transition: opacity 500ms ease;
   }
 }
 
-[data-modal-state="closing"]{
+[data-modal-state="closing"] {
   .overlay {
     opacity: 0;
     transition: opacity 500ms ease;
@@ -228,7 +239,9 @@ html, body {
 }
 
 [data-modal-state="open"] {
-  .modal__header, .modal__content {
+
+  .modal__header,
+  .modal__content {
     transition: opacity 450ms;
   }
 }
