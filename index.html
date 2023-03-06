@@ -26,7 +26,70 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
 
+  <style>
+    .cover {
+padding: 0px 30px;
+position: relative;
+margin-top: -5pc;
+}
+.left {
+position: absolute;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+}
+.right {
+position: absolute;
+right: 0;
+top: 50%;
+transform: translateY(-50%);
+}
+.scroll-images {
+  padding-top: 20px;
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: nowrap;
+overflow-x: auto;
+overflow-y: hidden;
+scroll-behavior: smooth;
+-webkit-overflow-scrolling: touch;
+}
+.scrollchild img {
+width: 100%;
+object-fit: cover;
+object-position: center;
+}
+.scroll-images::-webkit-scrollbar {
+display: none;
+background-color: #aaa;
+}
 
+.scroll-images::-webkit-scrollbar-thumb {
+background-color: black;
+}
+
+.scrollchild {
+min-width: 300px;
+height: auto;
+margin: 1px 10px;
+overflow: hidden;
+}
+
+#scroll-btn {
+background-color: transparent;
+border: none;
+outline: none;
+cursor: pointer;
+}
+.detail-box{
+  padding: 10px;
+  text-align: center;
+}
+.img-box img{
+  border-radius: 18px;
+}
+</style>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
@@ -81,7 +144,6 @@
     </div>
   </header>
   <!-- End Of Page Header -->
-
   <!-- Service Section -->
   <section id="service" class="section pt-0">
     <div class="container">
@@ -91,157 +153,165 @@
     </div>
   </section>
   <!-- carrosual section-->
-
-
-  <!--carrosual secition-->
-
-  <section class="service_section">
-    <div class="container grid-container">
-      <div style="cursor: grab;" class="service_container layout_padding2  grid-item main">
-        <div class="scroll-parent items" style="overflow-y: hidden;">
-          <div class="scroll-element square-wrapper">
-            <div class="service_box item item1 square square-transition">
-              <div class="img-box">
-                <img src="assets/imgs/images/s-1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h4>
-                  INSITU BORING
-                </h4>
-                <p>
-                  Any Bores of housing from vertical war mill rockers arm co-axial housing to Goratory crusher top and
-                  bottom. shell seats can be machined and ground to required tolerances. Bores upto 4000mm diameters can
-                  be insitu machined / ground
-                </p>
-              </div>
-            </div>
-            <div class="service_box item item2">
-              <div class="img-box">
-                <img src="assets/imgs/images/s-1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h4>
-                  INSITU KEY CUTTING
-                </h4>
-                <p>
-                  Any Damaged or new key-ways or key slots can be cut on any shatts key-ways upto 2000mm length can be
-                  cut.Internal key slots can also be machined if required.
-                </p>
-              </div>
-            </div>
-            <div class="service_box item item3">
-              <div class="img-box">
-                <img src="assets/imgs/images/s-1.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h4>
-                  INSITU CRACK-PIN <br />
-                  GRINDING
-                </h4>
-                <p>
-                  Any damaged cranck pin of diesel engines can be repaired without dismantling and cranck shaft from the
-                  cranck can be removed. Grinding will be done to the next undersize bearings may be used further
-                </p>
-              </div>
-            </div>
-            <div class="service_box item item4">
-              <div class="img-box">
-                <img src="assets/imgs/images/s-2.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h4>
-                  INSITU LINE BORING <br />
-                  OF DIESEL ENGINES
-                </h4>
-                <p>
-                  Any damaged main housings of cranck-case in diesel engines can be repaired.co-axial bores like VRM
-                  mill rockers Arm co-axial housings can be machined on-site.
-                </p>
-              </div>
-            </div>
-            <div class="service_box item item5">
-              <div class="img-box">
-                <img src="assets/imgs/images/s-3.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h4>
-                  INSITU LINE HOUSING Planning
-                </h4>
-                <p>
-                  Liners of marine and land based Diesel engines can be honed without dismandling.
-                </p>
-              </div>
-            </div>
-            <div class="service_box item item5">
-              <div class="img-box">
-                <img src="assets/imgs/images/s-3.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h4>
-                  INSITU SHAFT THREAD CUTTING
-                </h4>
-                <p>
-                  The damaged threads on large shafts on bores or large studs holes of any pitch can be repaired on site
-                  and new threads if required can also be cut.
-                </p>
-              </div>
-            </div>
-            <div class="service_box item item5">
-              <div class="img-box">
-                <img src="assets/imgs/images/s-3.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h4>
-                  INSITU DRILLING /<br />
-                  DEEP HOLE DRILLING
-
-                </h4>
-                <p>
-                  Deep hole drilling and plane and any legth can be carried out onsite
-                </p>
-              </div>
-            </div>
-            <div class="service_box item item5">
-              <div class="img-box">
-                <img src="assets/imgs/images/s-3.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h4>
-                  INSITU KILN SUPPORT ROLLES <br />
-                  / TYRE GRINDING
-                </h4>
-                <p>
-                  Kiln tyres and support rollers can be ground in position while in operation. The in-let seal seat
-                  areas also can be machined
-                </p>
-              </div>
-            </div>
-            <div class="service_box item item5">
-              <div class="img-box">
-                <img src="assets/imgs/images/s-3.jpg" alt="" />
-              </div>
-              <div class="detail-box">
-                <h4>
-                  INSITU GLANGE GACING <br />
-                  TUBE SHEET FACING
-                </h4>
-                <p>
-                  The gasket seating face of huge flanges and tube sheet flages can be machined. Onsite grinding of
-                  faces also possible with additional attachments. we can handle flanges upto 7000mm diameter
-                </p>
-              </div>
-            </div>
+  
+  <div class="cover">
+    <button id="scroll-btn" class="left" onclick="rightScroll()">
+      <i class="fas fa-angle-double-left"></i>
+    </button>
+    <div class="scroll-images">
+      <div class="scrollchild">
+        <div class="service_box item item1 square square-transition">
+          <div class="img-box">
+            <img src="assets/imgs/images/s-1.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              INSITU BORING
+            </h4>
+            <p>
+              Any Bores of housing from vertical war mill rockers arm co-axial housing to Goratory crusher top and
+              bottom. shell seats can be machined and ground to required tolerances. Bores upto 4000mm diameters can
+              be insitu machined / ground
+            </p>
           </div>
         </div>
-
       </div>
-      <div>
-        <a href="#about" id="button">
-          Read More
-        </a>
+      <div class="scrollchild">
+        <div class="service_box item item1 square square-transition">
+          <div class="img-box">
+            <img src="assets/imgs/images/s-1.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              INSITU KEY CUTTING
+            </h4>
+            <p>
+              Any Damaged or new key-ways or key slots can be cut on any shatts key-ways upto 2000mm length can be
+              cut.Internal key slots can also be machined if required.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollchild">
+        <div class="service_box item item1 square square-transition">
+          <div class="img-box">
+            <img src="assets/imgs/images/s-1.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              INSITU CRACK-PIN <br />
+              GRINDING
+            </h4>
+            <p>
+              Any damaged cranck pin of diesel engines can be repaired without dismantling and cranck shaft from the
+              cranck can be removed. Grinding will be done to the next undersize bearings may be used further
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollchild">
+        <div class="service_box item item1 square square-transition">
+          <div class="img-box">
+            <img src="assets/imgs/images/s-1.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              INSITU LINE BORING <br />
+                  OF DIESEL ENGINES
+            </h4>
+            <p>
+              Any damaged main housings of cranck-case in diesel engines can be repaired.co-axial bores like VRM
+              mill rockers Arm co-axial housings can be machined on-site.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollchild">
+        <div class="service_box item item1 square square-transition">
+          <div class="img-box">
+            <img src="assets/imgs/images/s-1.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              INSITU LINE HOUSING Planning
+            </h4>
+            <p>
+              Liners of marine and land based Diesel engines can be honed without dismandling.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollchild">
+        <div class="service_box item item1 square square-transition">
+          <div class="img-box">
+            <img src="assets/imgs/images/s-1.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              INSITU SHAFT THREAD CUTTING
+            </h4>
+            <p>
+              The damaged threads on large shafts on bores or large studs holes of any pitch can be repaired on site
+              and new threads if required can also be cut.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollchild">
+        <div class="service_box item item1 square square-transition">
+          <div class="img-box">
+            <img src="assets/imgs/images/s-1.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              INSITU DRILLING /<br />
+                  DEEP HOLE DRILLING
+            </h4>
+            <p>
+              Deep hole drilling and plane and any legth can be carried out onsite
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollchild">
+        <div class="service_box item item1 square square-transition">
+          <div class="img-box">
+            <img src="assets/imgs/images/s-1.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              INSITU KILN SUPPORT ROLLES <br />
+                  / TYRE GRINDING
+            </h4>
+            <p>
+              Kiln tyres and support rollers can be ground in position while in operation. The in-let seal seat
+              areas also can be machined
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="scrollchild">
+        <div class="service_box item item1 square square-transition">
+          <div class="img-box">
+            <img src="assets/imgs/images/s-1.jpg" alt="" />
+          </div>
+          <div class="detail-box">
+            <h4>
+              INSITU GLANGE GACING <br />
+                  TUBE SHEET FACING
+            </h4>
+            <p>
+              The gasket seating face of huge flanges and tube sheet flages can be machined. Onsite grinding of
+                  faces also possible with additional attachments. we can handle flanges upto 7000mm diameter
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+    <button id="scroll-btn" class="right" onclick="leftScroll()">
+      <i class="fas fa-angle-double-right"></i>
+    </button>
+  </div>
 
   <!-- End OF Service Section -->
 
@@ -735,6 +805,16 @@
       console.log(walk);
       console.log(startX)
     });
+  </script>
+   <script>
+    function leftScroll() {
+      const left = document.querySelector(".scroll-images");
+      left.scrollBy(200, 0);
+    }
+    function rightScroll() {
+      const right = document.querySelector(".scroll-images");
+      right.scrollBy(-200, 0);
+    }
   </script>
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

@@ -13398,14 +13398,14 @@ textarea.form-control {
   animation: primary 15s linear infinite;
 }
 
-@keyframes primary {
+/* @keyframes primary {
   from {
     left: 0%;
   }
   to {
     left: -50%;
   }
-}
+} */
 .industry-section {
   height: 100vh;
   width: 100%;
@@ -13752,12 +13752,12 @@ textarea.form-control {
   }
 }
 
-.service_box {
+.scrollchild {
 -webkit-transition: all 0.5s ease;
 transition: all 0.5s ease
 }
 
-.service_box:hover {
+.scrollchild:hover {
 -webkit-transform:translateY(-18px);
 transform: translateY(-18px)
 }
