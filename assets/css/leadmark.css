@@ -13398,14 +13398,14 @@ textarea.form-control {
   animation: primary 15s linear infinite;
 }
 
-/* @keyframes primary {
+@keyframes primary {
   from {
     left: 0%;
   }
   to {
     left: -50%;
   }
-} */
+}
 .industry-section {
   height: 100vh;
   width: 100%;
