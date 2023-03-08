@@ -13491,7 +13491,7 @@ textarea.form-control {
   }
 }
 
-@media screen and (min-width:310px) {
+/* @media screen and (min-width:310px) {
   .footer-section-container {
     margin-top: 444vh;
   }
@@ -13532,7 +13532,7 @@ textarea.form-control {
   .footer-section-container {
     margin-top: 1vh;
   }
-}
+} */
 
 .section-industry {
   font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
